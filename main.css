@@ -1,0 +1,133 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    padding: 0;  
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+section{
+    padding: 30px;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+}
+
+h1, h2{
+    margin: 0;
+    font-weight: 700;
+}
+
+/*Color*/
+/*lemon - hsl(71, 73%, 54%)*/
+/*Grey - hsl(218, 22%, 67%)*/
+/*Bluish Light - #4abebd*/
+/*Bluish Dark - hsl(179, 62%, 43%)*/
+
+
+
+
+#section1 p{
+    color: hsl(218, 22%, 67%);
+    line-height: 150%;
+}
+
+#section1 #guarantee{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: large;
+}
+
+#first-text{
+    font-size: 0.9em;
+}
+
+#section2{
+    background: #2bb3b1;
+}
+
+#section2 p{
+    color: #c1ffff;
+}
+
+#section2 #price{
+    font-size: 2em;
+    color: white;
+}
+
+#section2 #price_statement{
+    color: #91f4f9;
+}
+
+#section2 a{
+    display: block;
+    font-size: 1em;
+    margin: 30px auto 10px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    background: hsl(71, 73%, 54%);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #26a2a0 ;
+}
+
+#section2 a:hover{
+    background: hsl(54, 100%, 50%);
+}
+
+#section3{
+    background: #4abebd;
+}
+
+#section3 a{
+    color: #aff6fa;
+}
+
+#section3 a:hover{
+    color: hsl(71, 73%, 54%);
+}
+
+
+
+
+/*********************************
+RESPONSIVE DESIGN
+*********************************/
+
+@media screen and (min-width: 760px){
+
+    main{
+        display: grid;
+        grid-template-areas: "section1 section1"
+        "section2 section3";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section{
+        padding: 40px;
+    }
+
+    #section1{
+        grid-area: section1;
+    }
+
+    #section2{
+        grid-area: section2;
+    }
+
+    #section3{
+        grid-area: section3;
+    }
+}
